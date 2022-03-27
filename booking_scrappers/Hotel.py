@@ -16,7 +16,7 @@ class Hotel:
         }
 
     def get_name(self):
-        return self.soup.find("span", { "id": "hp_hotel_name" }).text
+        return self.soup.find("span", { "id": "hp_hotel_name" }).get_text("", True)
     
     def get_description(self):
         summary_paragraphs = self.soup.find("div", {"id": "summary"}).find_all("p")
@@ -31,7 +31,7 @@ class Hotel:
         return summary + "\n" + hotel_meta_infos  
 
     def get_address(self):
-        return self.soup.find("span", { "id": "hp_address_subtitle" }).text
+        return self.soup.find("span", { "id": "hp_address_subtitle" }).get_text("", True)
 
     def get_stars(self):
         stars_element = self.soup.find("i", { "class": "stars" })
