@@ -2,6 +2,7 @@
 
 ## Project setup 
 Please install the required dependencies. (Using a virtual environment is recommended)
+
 <sub>Note: the only package used is `beautifulsoup4`. the rest are related to the testing framework `pytest`</sub>
 
 ```
