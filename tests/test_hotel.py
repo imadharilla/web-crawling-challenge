@@ -1,7 +1,7 @@
 
 from booking_scrappers.Hotel import Hotel
 from booking_scrappers.helpers import load_json
-import sys, os
+import  os
 
 # Preparing Test Data 
 HTML = None
